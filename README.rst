@@ -2,27 +2,28 @@
  sphinx-electron
 =================
 
-This package is for building electron application which includs sphinx html outpts.
-Sphinx projects should have separate source and build directories.
+``sphinx-electron`` is a package to build electron application which includes sphinx html outputs.
+Sphinx projects should have separate directories for source(``source``) and build(``build``).
 
 
 Requirements
 ============
 
-- Sphinx
-- Node
-- electron-builder
+- `Sphinx <http://sphinx-doc.org>`_
+- `Node <http://nodejs.org/>`_
+- `electron-builder <http://github.com/maxogden/electron-packager>`_
 
 
 Install and Setup
 =================
 
-Get source code::
+Move to sphinx project directory and clone source code::
 
+  $ cd [Sphinx Project Directory]
   $ git clone sphinx-electron
 
 
-Install required packages::
+Install requirements::
 
   $ cd electron-packager
   $ nmp install electron-packager
