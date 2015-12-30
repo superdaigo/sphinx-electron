@@ -1,0 +1,14 @@
+{
+  "name": "My_electron_app",
+  "version": "0.0.1",
+  "company": "My company",
+  "osx": {
+    "app_bundle_id": "my.electron.app.id",
+    "helper_bundle_id": "my.electron.app.helper.id"
+  },
+  "electron_version": "0.36.2",
+  "main": "main.js",
+  "scripts": {
+    "release": "node release.js"
+  }
+}
