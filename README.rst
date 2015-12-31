@@ -14,8 +14,8 @@ Requirements
 - `electron-builder <http://github.com/maxogden/electron-packager>`_
 
 
-Install and Setup
-=================
+Install
+=======
 
 Move to sphinx project directory and clone source code::
 
@@ -29,6 +29,19 @@ Install requirements::
   $ nmp install electron-packager
 
 
+Sphinx project structure should be like below::
+
+    [Sphinx Project Directory]
+       ├── Makefile
+       ├── make.bat
+       ├── build               # Sphinx build directory
+       ├── source              # Sphinx source directory
+       └── sphinx-electron     # this package
+
+
+Setup
+=====
+
 Add below secdtion into sphinx Makefile::
 
   app:
@@ -40,14 +53,19 @@ Add below secdtion into sphinx Makefile::
 
 
 
-Sphinx project structure should be like below::
+Modify electron application settings in package.json file.
 
-    [Sphinx Project Directory]
-       ├── Makefile
-       ├── make.bat
-       ├── build               # Sphinx build directory
-       ├── source              # Sphinx source directory
-       └── sphinx-electron     # this package
+--------------------  -------------------------------------------
+Key                   Description 
+====================  ===========================================
+``name``              Application name
+``version``           Application version
+``company``           Company name
+``app_bundle_id``     Bundle ID for OSX application
+``helper_bundle_id``  Bundle ID for OSX helper application
+``arch``              Available values: ia32, x64, all
+``platform``          Available values: linux, win32, darwin, all
+--------------------  -------------------------------------------
 
 
 Build Electron Application

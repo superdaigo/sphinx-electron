@@ -1,11 +1,13 @@
 {
-  "name": "My_electron_app",
+  "name": "sphinx_electron_app",
   "version": "0.0.1",
-  "company": "My company",
+  "company": "my company",
   "osx": {
-    "app_bundle_id": "my.electron.app.id",
-    "helper_bundle_id": "my.electron.app.helper.id"
+    "app_bundle_id": "sphinx.electron.app.id",
+    "helper_bundle_id": "sphinx.electron.app.helper.id"
   },
+  "arch": "x64",
+  "platform": "all",
   "electron_version": "0.36.2",
   "main": "main.js",
   "scripts": {
