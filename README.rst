@@ -55,17 +55,24 @@ Add below secdtion into sphinx Makefile::
 
 Modify electron application settings in package.json file.
 
---------------------  -------------------------------------------
-Key                   Description 
-====================  ===========================================
-``name``              Application name
-``version``           Application version
-``company``           Company name
-``app_bundle_id``     Bundle ID for OSX application
-``helper_bundle_id``  Bundle ID for OSX helper application
-``arch``              Available values: ia32, x64, all
-``platform``          Available values: linux, win32, darwin, all
---------------------  -------------------------------------------
++--------------------+-------------------------------------------+
+|Key                 |Description                                |
++====================+===========================================+
+|``name``            |Application name                           |
++--------------------+-------------------------------------------+
+|``version``         |Application version                        |
++--------------------+-------------------------------------------+
+|``company``         |Company name                               |
++--------------------+-------------------------------------------+
+|``app_bundle_id``   |Bundle ID for OSX application              |
++--------------------+-------------------------------------------+
+|``helper_bundle_id``|Bundle ID for OSX helper application       |
++--------------------+-------------------------------------------+
+|``arch``            |Available values: ia32, x64, all           |
++--------------------+-------------------------------------------+
+|``platform``        |Available values: linux, win32, darwin, all|
++--------------------+-------------------------------------------+
+
 
 
 Build Electron Application
